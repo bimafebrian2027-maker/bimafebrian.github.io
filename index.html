@@ -110,32 +110,38 @@
     </nav>
 
 <!-- Hero Section -->
-<section id="home" class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 text-center">
-
-    <!-- Slideshow Foto -->
-    <div class="mb-6 relative" style="width: 180px; height: 240px;">
-        <img id="slide1" src="FOTO1.jpeg" 
-            class="absolute top-0 left-0 w-full h-full object-cover rounded-xl border-2 border-red-600 shadow-lg shadow-red-900/50 transition-opacity duration-1000 opacity-100">
-        <img id="slide2" src="FOTO2.jpeg" 
-            class="absolute top-0 left-0 w-full h-full object-cover rounded-xl border-2 border-red-600 shadow-lg shadow-red-900/50 transition-opacity duration-1000 opacity-0">
+<section id="home" class="min-h-screen flex items-center px-8 md:px-24 pt-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center w-full">
         
-        <!-- Dot indicator -->
-        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-            <span id="dot1" class="w-2 h-2 rounded-full bg-red-600 transition-all duration-300"></span>
-            <span id="dot2" class="w-2 h-2 rounded-full bg-white/30 transition-all duration-300"></span>
+        <!-- KIRI: Foto Slideshow -->
+        <div class="flex justify-center">
+            <div class="relative" style="width: 280px; height: 373px;">
+                <img id="slide1" src="FOTO1.jpeg" 
+                    class="absolute top-0 left-0 w-full h-full object-cover rounded-xl border-2 border-red-600 shadow-lg shadow-red-900/50 transition-opacity duration-1000 opacity-100">
+                <img id="slide2" src="FOTO2.jpeg"
+                    class="absolute top-0 left-0 w-full h-full object-cover rounded-xl border-2 border-red-600 shadow-lg shadow-red-900/50 transition-opacity duration-1000 opacity-0">
+                
+                <!-- Dot indicator -->
+                <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                    <span id="dot1" class="w-2 h-2 rounded-full bg-red-600 transition-all duration-300"></span>
+                    <span id="dot2" class="w-2 h-2 rounded-full bg-white/30 transition-all duration-300"></span>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="mb-2 mt-8"></div>
+        <!-- KANAN: Teks -->
+        <div>
+            <p class="text-gray-400 uppercase tracking-[0.3em] text-xs mb-4">Welcome To My Portofolio Website</p>
+            <h1 class="text-4xl md:text-5xl font-bold hero-title mb-6">BIMA <span class="red-accent">FEBRIAN</span></h1>
+            <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-8">
+                Mahasiswa Pendidikan Bahasa Inggris di Universitas Negeri Padang yang memiliki ketertarikan terhadap keuangan, pasar modal, keamanan siber, dan AI. Pelajar sepanjang hayat yang fokus pada pengembangan diri.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#experience" class="bg-red-accent hover:bg-red-700 text-white px-8 py-3 rounded-full transition text-sm font-semibold">Lihat Porto</a>
+                <a href="#contact" class="border border-white/20 hover:border-red-600 px-8 py-3 rounded-full transition text-sm font-semibold">Hubungi Saya</a>
+            </div>
+        </div>
 
-    <p class="text-gray-400 uppercase tracking-[0.3em] text-xs mb-4">Welcome To My Portofolio Website</p>
-    <h1 class="text-4xl md:text-5xl font-bold hero-title mb-6">BIMA <span class="red-accent">FEBRIAN</span></h1>
-    <p class="max-w-2xl text-gray-300 leading-relaxed text-sm md:text-base mb-8">
-        Mahasiswa Pendidikan Bahasa Inggris di Universitas Negeri Padang yang memiliki ketertarikan terhadap keuangan, pasar modal, keamanan siber, dan AI. Pelajar sepanjang hayat yang fokus pada pengembangan diri.
-    </p>
-    <div class="flex space-x-4">
-        <a href="#experience" class="bg-red-accent hover:bg-red-700 text-white px-8 py-3 rounded-full transition text-sm font-semibold">Lihat Porto</a>
-        <a href="#contact" class="border border-white/20 hover:border-red-600 px-8 py-3 rounded-full transition text-sm font-semibold">Hubungi Saya</a>
     </div>
 </section>
 
