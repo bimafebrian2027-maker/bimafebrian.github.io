@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        
-      body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0a0a0a;
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
+              
+        .body {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
 
-        .gradient-bg {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 50%, #450a0a 100%);
-            background-attachment: fixed;
-        }
+.gradient-bg {
+    background-image: url('BG.png');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #0a0a0a;
+    position: relative;
+}
 
-        .red-accent {
+.gradient-bg::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(40, 0, 0, 0.85);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.gradient-bg > * {
+    position: relative;
+    z-index: 1;
+}
+        red-accent {
             color: #dc2626;
         }
 
