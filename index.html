@@ -17,9 +17,24 @@
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 50%, #450a0a 100%);
-            background-attachment: fixed;
-        }
+    background-image: url('BG.png');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.gradient-bg::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(26,5,5,0.88) 50%, rgba(69,10,10,0.85) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+.gradient-bg > * {
+    position: relative;
+    z-index: 1;
         
         red-accent {
             color: #dc2626 !important;
