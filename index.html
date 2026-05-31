@@ -16,18 +16,48 @@
             scroll-behavior: smooth;
         }
 
-       .gradient-bg {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 50%, #450a0a 100%);
-            background-attachment: fixed;
-        }
-
-.red-accent {
-    color: #dc2626;
+     .gradient-bg {
+    background-image: url('BG.png');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-        .bg-red-accent {
-            background-color: #dc2626;
-        }
+.gradient-bg::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(26,5,5,0.88) 50%, rgba(69,10,10,0.85) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.gradient-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+.red-accent {
+    color: #dc2626 !important;
+}
+
+.text-red-400 {
+    color: #f87171 !important;
+}
+
+.text-gray-300 {
+    color: #d1d5db !important;
+}
+
+.text-gray-400 {
+    color: #9ca3af !important;
+}
+
+.bg-red-accent {
+    background-color: #dc2626;
+}
 
         .card-glass {
             background: rgba(255, 255, 255, 0.03);
